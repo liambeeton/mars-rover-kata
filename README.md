@@ -1,7 +1,5 @@
 ﻿<h1 align="center">🚀 Mars Rover Kata</h1>
 
-
-
 ## ❓ Instructions 
 
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars.
@@ -26,7 +24,7 @@ If a rover reaches the end of the plateau, it wraps around the end of the grid.
 
 ### Output
 
-The program's output is the final position of the rover after all the move commands have been executed. The position is represented as a coordinate pair and a direction, joined by colons to form a string. For example: a rover whose position is `2:3:W` is at square (2,3), facing west.
+The program's output is the final position of the rover after all the move commands have been executed. The position is represented as a coordinate pair and a direction, joined by spaces to form a string. For example: a rover whose position is `2 3 W` is at square (2,3), facing west.
 
 ## 🌍 Quick start
 
