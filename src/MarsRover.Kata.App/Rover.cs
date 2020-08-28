@@ -3,13 +3,15 @@ namespace MarsRover.Kata.App
 {
     public class Rover
     {
-        private Direction direction = new Direction("N", "W", "E");
-        private Coordinate coordinate = new Coordinate(0, 0);
+        private Direction direction;
+        private Coordinate coordinate;
         private readonly Grid grid;
 
-        public Rover(Grid grid)
+        public Rover(Grid grid, Direction direction, Coordinate coordinate)
         {
             this.grid = grid;
+            this.direction = direction;
+            this.coordinate = coordinate;
         }
 
         public string Execute(string commands)

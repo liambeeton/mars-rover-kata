@@ -5,12 +5,16 @@ namespace MarsRover.Kata.App.Tests
     public class RoverTests
     {
         private readonly Grid grid;
+        private readonly Direction direction;
+        private readonly Coordinate coordinate;
         private readonly Rover rover;
 
         public RoverTests()
         {
             grid = new Grid(10, 10);
-            rover = new Rover(grid);
+            direction = new Direction("N", "W", "E");
+            coordinate = new Coordinate(0, 0);
+            rover = new Rover(grid, direction, coordinate);
         }
 
         [Theory]
