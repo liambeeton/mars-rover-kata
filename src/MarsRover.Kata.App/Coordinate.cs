@@ -1,4 +1,5 @@
-﻿namespace MarsRover.Kata.App
+﻿
+namespace MarsRover.Kata.App
 {
     public class Coordinate
     {

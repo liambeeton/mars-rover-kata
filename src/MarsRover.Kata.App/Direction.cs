@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace MarsRover.Kata.App
 {
@@ -48,14 +49,7 @@ namespace MarsRover.Kata.App
 
         private Direction Heading(string value)
         {
-            foreach (Direction direction in Values)
-            {
-                if (direction.Value() == value)
-                {
-                    return direction;
-                }
-            }
-            return null;
+            return Values.FirstOrDefault(d => d.Value() == value);
         }
     }
 }
